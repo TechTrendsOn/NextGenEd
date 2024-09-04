@@ -1,6 +1,8 @@
 # NextGenEd: Revolutionizing E-Learning App
   **(Using LLaVa 1.5, Whisper AI, Bing Web Search and Gradio UI Integration)**
-  Video demonstration - https://drive.google.com/file/d/1vjRAAAdYDtjDjpXDLwgV_hiZTxjP_TJl/view?usp=drive_link
+  
+## Video demonstration:
+https://drive.google.com/file/d/1vjRAAAdYDtjDjpXDLwgV_hiZTxjP_TJl/view?usp=drive_link
 
 
 ## Introduction
