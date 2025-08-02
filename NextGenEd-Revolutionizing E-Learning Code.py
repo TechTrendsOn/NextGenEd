@@ -320,7 +320,7 @@ import html
 def search_articles(query, num_results=5, engine="google"):
 
     # SerpAPI key
-    serpapi_key = "611ef13537c011f894b6ddb6af1a8ef3343f603f4669154400fe6244d959cea7"
+    serpapi_key = "replace__with_serpapi_key"
 
     # Define the parameters for the SerpAPI search
     params = {
