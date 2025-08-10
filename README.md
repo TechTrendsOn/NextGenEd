@@ -2,8 +2,7 @@
   **(Using LLaVa 1.5, Whisper AI, Web Search API and Gradio UI Integration)**
 
 This repository contains a partial implementation intended to showcase project structure, technical design, and reproducibility practices.  
-Certain logic has been redacted to respect confidentiality.  
-Full implementation is available upon request or in a collaborative setting.
+Certain logic has been redacted to respect confidentiality. Full implementation is available upon request or in a collaborative setting.
 
 ## Video demonstration:
 https://drive.google.com/file/d/1vjRAAAdYDtjDjpXDLwgV_hiZTxjP_TJl/view?usp=drive_link
