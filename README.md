@@ -10,10 +10,10 @@ Welcome to the NextGenEd app repository! NextGenEd is a cutting-edge educational
  **Demo video**: [Watch the app in action—Web UI walkthrough](https://drive.google.com/file/d/1vjRAAAdYDtjDjpXDLwgV_hiZTxjP_TJl/view?usp=drive_link)
 
 ## Features
-- **Comprehensive Image and Audio Analysis**: NextGenEd excels in transforming visual and auditory inputs into detailed educational insights. Through the LLava AI, the app meticulously examines images to identify educational content and underlying concepts. Once these elements are recognized, the app generates a comprehensive explanation tailored to the user's query. This process ensures that learners receive precise, context-specific information that enhances their understanding of the subject matter.
-Simultaneously, Whisper AI captures and converts spoken queries into text, allowing the app to process and respond to verbal instructions or questions with accuracy. This dual capability ensures that whether the input is visual or audio, the user receives a detailed and informed response that makes learning interactive and effective.
+- **Comprehensive Image and Audio Analysis**: NextGenEd excels in transforming visual and auditory inputs into detailed educational insights. Through the LLava AI guided by strategic prompt design, the app meticulously examines images to identify educational content and underlying concepts. Once these elements are recognized, the app generates a comprehensive explanation tailored to the user's query. This process ensures that learners receive precise, context-specific information that enhances their understanding of the subject matter.
+Simultaneously, Whisper AI captures and converts spoken queries into text, allowing the app to process and respond to verbal instructions or questions with accuracy. This dual capability ensures that whether the input is visual or audio, the user receives a detailed and informed response, in both textual and audio format, that makes learning interactive and effective.
 
-- **Accessible Learning Through Text to Speech**: gTTS technology enables the app to deliver AI-generated text outputs as clear, audible responses, making learning accessible to all, including those who prefer auditory learning or have visual impairments.
+- **Accessible Learning Through Text to Speech**: gTTS technology enables the app to deliver AI-generated text outputs as clear, audible responses, making learning accessible to all, including those who prefer auditory learning.
 
 - **User-Friendly Interactive Interface**: Built on Gradio UI, NextGenEd offers an intuitive and engaging user interface that simplifies the process of uploading images and audio, making it straightforward for users of all ages and tech-savviness.
 
@@ -23,11 +23,27 @@ Simultaneously, Whisper AI captures and converts spoken queries into text, allow
 ## Getting Started
 
 ### Prerequisites
-- Python 3.8 or higher
-- pip
-- Access through Google Colab or a local setup with GPU capabilities for optimal performance.
+
+- **Python** 3.8 or higher  
+- **pip** (Python package manager)  
+- **GPU-enabled environment** (recommended for optimal performance with LLaVA and Whisper)  
+- **ffmpeg** installed (required for audio preprocessing and Whisper compatibility)  
+
+#### Required Libraries
+- `transformers` (>=4.35.3) — for model pipelines and integration  
+- `torch` — for deep learning model execution  
+- `gradio` — for building the interactive web interface  
+- `gTTS` — for converting AI-generated text to speech  
+- `requests` — for making API calls (e.g., SerpAPI)  
+- `git+https://github.com/openai/whisper.git` — for robust speech-to-text transcription  
+
+#### Optional / Performance-Enhancing Libraries
+- `bitsandbytes` — Efficient quantized model loading  
+- `accelerate` — Device-aware model deployment  
+- `openai-whisper` — Direct Whisper integration (if not using via `transformers`)
 
 > 🔐 _To enable search features, [sign up at SerpAPI](https://serpapi.com/) and generate your API key.  
+
 
 ## 📍 Further Instructions (if using Google Colab)
 
@@ -45,6 +61,6 @@ Simultaneously, Whisper AI captures and converts spoken queries into text, allow
    Once all cells have executed, Gradio will launch and display a live URL.  
    Click the link to open the **NextGenEd** interface in a new browser tab.
 
-5. **Start Interacting**  
+4. **Start Interacting**  
    Follow the interface prompts to begin using the app.
 
