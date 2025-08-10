@@ -4,25 +4,10 @@
 This repository contains a partial implementation intended to showcase project structure, technical design, and reproducibility practices.  
 Certain logic has been redacted to respect confidentiality. Full implementation is available upon request or in a collaborative setting.
 
-## Video demonstration:
-https://drive.google.com/file/d/1vjRAAAdYDtjDjpXDLwgV_hiZTxjP_TJl/view?usp=drive_link
-
-
 ## Introduction
 Welcome to the NextGenEd app repository! NextGenEd is a cutting-edge educational technology tool designed to enhance learning experiences through innovative use of AI. This app uses machine learning models to analyze text and speech, ensuring accessibility and providing educational support across diverse learning environments.
 
-## 🚀 Quickstart (TL;DR)
-
-- **Run directly in [Google Colab](https://colab.research.google.com/drive/1f6aHLXkYUFE9wopn5bv1WuFyv0r1sCQY?authuser=4#scrollTo=PF3JMECRVeRr)**  
-  > 🔐 _To enable search features, [sign up at SerpAPI](https://serpapi.com/) and generate your API key.  
-  > You'll be prompted to enter it in the notebook when running._
-
-- **Clone & run locally**:  
-  ```bash
-  git clone ...
-  pip install -r requirements.txt
-
- - **Demo video**: [Watch the app in action—Web UI walkthrough](https://drive.google.com/file/d/1vjRAAAdYDtjDjpXDLwgV_hiZTxjP_TJl/view?usp=drive_link)
+ **Demo video**: [Watch the app in action—Web UI walkthrough](https://drive.google.com/file/d/1vjRAAAdYDtjDjpXDLwgV_hiZTxjP_TJl/view?usp=drive_link)
 
 ## Features
 - **Comprehensive Image and Audio Analysis**: NextGenEd excels in transforming visual and auditory inputs into detailed educational insights. Through the LLava AI, the app meticulously examines images to identify educational content and underlying concepts. Once these elements are recognized, the app generates a comprehensive explanation tailored to the user's query. This process ensures that learners receive precise, context-specific information that enhances their understanding of the subject matter.
@@ -42,15 +27,7 @@ Simultaneously, Whisper AI captures and converts spoken queries into text, allow
 - pip
 - Access through Google Colab or a local setup with GPU capabilities for optimal performance.
 
-### Installation
-Clone the repository and install the required packages:
-
-```bash
-git clone https://github.com/TechTrendsOn/NextGenEd.git
-cd NextGenEd
-pip install -r requirements.txt
-```
-
+> 🔐 _To enable search features, [sign up at SerpAPI](https://serpapi.com/) and generate your API key.  
 
 ## 📍 Further Instructions (if using Google Colab)
 
@@ -59,16 +36,12 @@ pip install -r requirements.txt
    Go to `Runtime` → `Change runtime type`.  
    Under 'Hardware accelerator', select `GPU` from the dropdown menu, then click `Save`.
 
-2. **Run the Notebook**  
-   Execute the code cells one by one using the `▶️ Run` button, or use `Runtime` → `Run all` to run everything at once.  
-   The notebook will handle installing dependencies and preparing the environment automatically.
-
-3. **Add Your SerpAPI Key**  
+2. **Add Your SerpAPI Key**  
    To use the search functionality, [create a free SerpAPI account](https://serpapi.com/) and generate your API key.  
    When prompted in the notebook, enter your key, or paste it directly into the `serp_api_key` variable inside the code.  
    > ⚠️ **Important:** Never share your API key in public notebooks. It’s tied to your account and usage limits.
 
-4. **Access the App**  
+3. **Access the App**  
    Once all cells have executed, Gradio will launch and display a live URL.  
    Click the link to open the **NextGenEd** interface in a new browser tab.
 
